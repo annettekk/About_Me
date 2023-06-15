@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 10rem auto 0 auto;
+    box-sizing: border-box;
+    width: 90%;
+    /*text-align: center;*/
+  }
+  
+  /* :root represents the <html> element and is identical to the selector html, except that its specificity is higher */
+  
+  :root {
+    /* Using CSS Custom properties */
+    --grn: #606c5d;
+    --pnk: #fff4f4;
+    --beige: #f7e6c4;
+    --yel: #f1c376;
+    --mainbackgroundcolor: #f1c376;
+  }
+  h1 {
+    background-color: var(--mainbackgroundcolor);
+    /* background-color: #606c5d; */
+    color: var(--pnk);
+  }
+  h2 {
+    background-color: var(--mainbackgroundcolor);
+    /* background-color: #606c5d; */
+    color: var(--grn);
+  }
+  h3 {
+    background-color: var(--mainbackgroundcolor);
+    /* background-color: #606c5d; */
+    color: var(--grn);
+  }

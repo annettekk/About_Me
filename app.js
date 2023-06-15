@@ -1,4 +1,5 @@
 'use strict'
+cnsole.log('boo');
 let correctAnswernumber = 0;
 let questions = ['Do I like cats?', 'Do you like cats?', 'Is yellow my fav color?', 'Is pineapple my fav fruit?', 'Is poppy my fav flower?']
 let answer;
