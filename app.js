@@ -23,8 +23,9 @@ YorNquestions()
 function numberGame() {
 let answerTonumberGame = prompt('Guess a number!')
 let attempt;
-let correctAnswer = Math.floor(Math.random()*100)
-for (attempt = 1; attempt < 4; attempt++) {
+let correctAnswer = Math.floor(Math.random()*10)
+let guessNumber = false;
+for (attempt = 1; attempt < 5; attempt++) {
      
     if (answerTonumberGame > correctAnswer) {
         alert('Too high')
@@ -33,17 +34,19 @@ for (attempt = 1; attempt < 4; attempt++) {
     else if (answerTonumberGame < correctAnswer) {
         alert('Too low')
         answerTonumberGame = prompt('Guess a number!')
-    
 }
     
-    else if (answerTonumberGame === correctAnswer) {
+    else if (answerTonumberGame == correctAnswer) {
         alert('Corrrecto!');
+        guessNumber = true
         correctAnswernumber++
     break 
     } else {
     alert('This is NaN!');
     answerTonumberGame = prompt('Guess a number!')
-}}  alert('You are out of attempts. The answer was ' + correctAnswer)}
+}}  
+if (guessNumber === false) {alert('You are out of attempts. The answer was ' + correctAnswer)}
+}
 numberGame()
 //console.log(correctAnswer)
 //console.log(attempt)
@@ -53,20 +56,22 @@ numberGame()
 function fruitGame() {
 let fruitAttempt;
 let okishFruitanswers = ['mangostin', 'mango', 'coconut', 'durian'];
-
+let guessFruit = false;
 let fruitAnswer = prompt('Name another fruit that I like?').toLowerCase()
-    for (fruitAttempt = 1; fruitAttempt < 3; fruitAttempt++) {
+    for (fruitAttempt = 1; fruitAttempt < 5; fruitAttempt++) {
         //fruitAnswer = prompt(fruitQuestions[j]).toLowerCase();
         if (fruitAnswer != okishFruitanswers[0] && fruitAnswer != okishFruitanswers[1] && fruitAnswer != okishFruitanswers[2] && fruitAnswer != okishFruitanswers[3]) {
             alert('Wrong');
+
             fruitAnswer = prompt('Name another fruit that I like?').toLowerCase()
         } else {
         alert('Si, senor!');
+        guessFruit = true;
         correctAnswernumber++
         break
         } }
-if (fruitAttempt == 3) {alert('You are out of attempts. I also like ' + okishFruitanswers[0] + ', ' + okishFruitanswers[1] + ', ' + okishFruitanswers[2] + ', ' + okishFruitanswers[3])}
-}
+if (guessFruit === false) {alert('You are out of attempts. I also like ' + okishFruitanswers[0] + ', ' + okishFruitanswers[1] + ', ' + okishFruitanswers[2] + ', ' + okishFruitanswers[3])
+}}
 
 fruitGame()
 
