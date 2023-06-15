@@ -3,6 +3,8 @@
     margin: 10rem auto 0 auto;
     box-sizing: border-box;
     width: 90%;
+    background-color: #FCE9F1;
+    ;
     /*text-align: center;*/
   }
   
@@ -37,8 +39,10 @@
     margin: 5rem auto 0 auto;
     height: 40rem;
     position: static;
+    
     /* The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value. */
   }
+  
   #one {
     width: 20%;
     background-color: linen;
@@ -53,7 +57,7 @@
   .master {
     width: 100px;
     height: 50px;
-    background-color: teal;
+    background-color: darkturquoise;
     margin: 1rem auto;
     position: relative;
   }
