@@ -1,10 +1,10 @@
 * {
     padding: 0;
-    margin: 10rem auto 0 auto;
+    margin: 5rem auto 5rem auto;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     background-color: #FCE9F1;
-    ;
+    line-height: 1.2rem;
     /*text-align: center;*/
   }
   
@@ -22,6 +22,7 @@
     background-color: var(--beige);
     /* background-color: #606c5d; */
     color: var(--grn);
+    text-align: center  ;
   }
   h2 {
     background-color: var(--mainbackgroundcolor);
@@ -38,8 +39,8 @@
     width: 80%;
     margin: 5rem auto 0 auto;
     height: 40rem;
-    position: static;
-    
+    position:static;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value. */
   }
   
@@ -54,12 +55,22 @@
   
     This value creates a new stacking context when the value of z-index is not auto. Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined. */
   }
+  #two {
+    width: 30%;
+    background-color: linen;
+    position: relative;
+    left: 100px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
   .master {
     width: 100px;
     height: 50px;
     background-color: darkturquoise;
     margin: 1rem auto;
     position: relative;
+    text-align: center;
+    
   }
   
   .overlay {
@@ -76,7 +87,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
+    white-space: normal;
+    ;
   }
   
   .master:hover .overlay {
