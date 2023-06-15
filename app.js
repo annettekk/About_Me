@@ -1,6 +1,7 @@
 'use strict'
-cnsole.log('boo');
+console.log('boo');
 let correctAnswernumber = 0;
+function YorNquestions() {
 let questions = ['Do I like cats?', 'Do you like cats?', 'Is yellow my fav color?', 'Is pineapple my fav fruit?', 'Is poppy my fav flower?']
 let answer;
 let okishAnswers = ['yes', 'no', 'y', 'n'];
@@ -16,32 +17,40 @@ for (let i = 0; i < questions.length; i++) {
     alert('Corrrecto!');
     correctAnswernumber++
     } else if (answer == 'no' || answer == 'n') { alert('Incorect, sorry') 
-    } }
+    } } }
+YorNquestions()
+
+function numberGame() {
 let answerTonumberGame = prompt('Guess a number!')
 let attempt;
 let correctAnswer = Math.floor(Math.random()*100)
 for (attempt = 1; attempt < 4; attempt++) {
+     
     if (answerTonumberGame > correctAnswer) {
         alert('Too high')
         answerTonumberGame = prompt('Guess a number!')
     }
     else if (answerTonumberGame < correctAnswer) {
         alert('Too low')
-        answerTonumberGame = prompt('Guess a number!')}
+        answerTonumberGame = prompt('Guess a number!')
+    
+}
+    
     else if (answerTonumberGame === correctAnswer) {
         alert('Corrrecto!');
         correctAnswernumber++
     break 
-    } else { alert('This is NaN!');
-    answerTonumberGame = prompt('Guess a number!')}
-}
-if (attempt == 4) {alert('You are out of attempts. The answer was ' + correctAnswer)
-}
+    } else {
+    alert('This is NaN!');
+    answerTonumberGame = prompt('Guess a number!')
+}}  alert('You are out of attempts. The answer was ' + correctAnswer)}
+numberGame()
 //console.log(correctAnswer)
 //console.log(attempt)
 
 //let fruitQuestions = ['Name another fruit that I like?']
 
+function fruitGame() {
 let fruitAttempt;
 let okishFruitanswers = ['mangostin', 'mango', 'coconut', 'durian'];
 
@@ -57,5 +66,8 @@ let fruitAnswer = prompt('Name another fruit that I like?').toLowerCase()
         break
         } }
 if (fruitAttempt == 3) {alert('You are out of attempts. I also like ' + okishFruitanswers[0] + ', ' + okishFruitanswers[1] + ', ' + okishFruitanswers[2] + ', ' + okishFruitanswers[3])}
-console.log(fruitAttempt)
+}
+
+fruitGame()
+
 alert('You have got ' + correctAnswernumber + ' correct answers.')
